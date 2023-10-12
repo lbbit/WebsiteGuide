@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+
+  websiteguide:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "81:80"
+    restart: always
+    volumes:
+     - website-db:/WebsiteGuide
+     - website-media:/WebsiteGuide/websiteapp/media
+
+volumes:
+  website-db:  # 这是数据库文件的卷
+  website-media:  # 这是media文件的卷
+    driver: local
