@@ -37,6 +37,9 @@
       <Content :style="{padding: '0 16px 16px',}">
         <router-view v-wechat-title="$route.meta.title"></router-view>
       </Content>
+      <Footer style="text-align: center; background-color: #f2f2f2; padding: 10px;">
+        <div style="font-weight: bold; font-size: 16px; color: #333;">欢迎帮助本站点增加收录，如需要添加链接，联系IT或SW/Barry <a href="mailto:barry.lu@ourmmy.com" style="text-decoration: none; color: #007bff;">barry.lu@ourmmy.com</a></div>
+      </Footer>
     </Layout>
   </div>
 </template>
